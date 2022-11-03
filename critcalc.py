@@ -59,7 +59,7 @@ def get_equals_prob(criteria, dice, mod):
   return acc 
   
 def get_dmg_pdf(threshold, attDice, attMod, dmgDice, dmgMod, crits=np.array([20])):
-  maxDmg = dmgMod 
+  maxDmg = dmgMod
   maxAttRoll = 0
   for dmgDie in dmgDice:
     maxDmg += 2*dmgDie[0]
