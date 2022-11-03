@@ -36,8 +36,8 @@ def avg_median_compare():
   ac = range(35)
 
   avgs, meds, los, his = cc.get_dmg_vs_ac(np.array([[20,0]]), 5, dmgDice, dmgMod)
-  plt.errorbar(ac, avgs,None,0.5,linestyle='', label="average damage")
   plt.plot(ac, meds, label="median damage")
+  plt.errorbar(ac, avgs,None,0.5,linestyle='', label="average damage")
   #plt.plot(ac, his, label="84th percentile")
   #plt.plot(ac, los, label="16th percentile")
   plt.fill_between(ac, los, his, color='b', alpha=.1, label="68th percentile")
